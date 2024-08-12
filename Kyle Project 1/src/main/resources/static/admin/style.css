@@ -1,0 +1,37 @@
+.main-backgroud {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.main-form {
+    width: 500px;
+    margin: 30px 10px 30px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: #b0e7f1;
+}
+
+.main-form select, .main-form input {
+    margin: 5px 30px 5px 30px;
+}
+
+
+.color-container, .color-container > div, .stock-area, .stock-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.color-container > div {
+    border: red 1px solid;
+    margin: 10px 10px 10px 10px;
+}
+
+.stock-area {
+    margin: 0px 50px 0px 50px;
+    border: blueviolet 1px solid;
+}
+

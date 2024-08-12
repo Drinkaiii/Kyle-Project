@@ -1,0 +1,32 @@
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.main-product {
+    margin: 10px 20px 10px 20px;
+    cursor: pointer;
+}
+
+.main-product-img {
+    width: 360px;
+    height: 480px;
+}
+
+.main-product-color {
+    display: flex;
+    /*border: #5c5860 1px solid;*/
+}
+
+.main-product-color-block {
+    width: 24px;
+    height: 24px;
+    margin: 10px 5px 10px 5px;
+}
+
+.main-product p {
+    font-size: 20px;
+    letter-spacing: 4px;
+    color: #3f3a3a;
+}

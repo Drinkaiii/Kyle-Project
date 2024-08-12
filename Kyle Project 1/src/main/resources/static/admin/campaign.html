@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>set the campaign</title>
+</head>
+<body>
+    <div>
+        <h1>set new campaign</h1>
+    </div>
+    <form action="/api/1.0/marketing/setCampaign" method="post" enctype="multipart/form-data">
+        <select name="productId" class="form-select">
+        </select>
+        <input type="file" name="picture" required>
+        <textarea name="story" placeholder="story" required></textarea>
+        <button type="submit">submit</button>
+    </form>
+</body>
+<script>
+    const formSelect = document.querySelector(".form-select")
+    fetch("/api/1.0/products/all")
+        .then(response => response.json())
+        .then(data => {
+            // show product data
+            data.data.forEach(product => {
+                const newOption = document.createElement("option");
+                newOption.value = product.id;
+                newOption.text = product.title;
+                formSelect.appendChild(newOption);
+
+            });
+        });
+</script>
+</html>

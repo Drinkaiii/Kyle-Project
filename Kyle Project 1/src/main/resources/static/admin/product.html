@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="main-backgroud">
+
+    <form action="/api/1.0/products/create" method="post" enctype="multipart/form-data">
+        <div class="main-form">
+            <div>
+                <h1>My stylish moment</h1>
+            </div>
+            <select name="category">
+                <option value="1">women</option>
+                <option value="2">men</option>
+                <option value="3">accessories</option>
+            </select>
+            <input type="input" name="title" placeholder="title" required>
+            <input type="input" name="description" placeholder="description" required>
+            <input type="input" name="price" placeholder="price (positive integer)" pattern="^[0-9]\d*$" required>
+            <input type="input" name="texture" placeholder="texture" required>
+            <input type="input" name="wash" placeholder="wash" required>
+            <select name="place">
+                <option value="1">韓國</option>
+                <option value="2">中國</option>
+                <option value="3">越南</option>
+                <option value="4">日本</option>
+                <option value="5">臺灣</option>
+                <option value="6">美國</option>
+                <option value="7">加拿加</option>
+                <option value="8">巴西</option>
+                <option value="9">印尼</option>
+            </select>
+            <input type="input" name="note" placeholder="note" required>
+            <input type="input" name="story" placeholder="story" required>
+            <p>主要圖片上傳：</p>
+            <input type="file" name="image_main_file" required>
+            <p>其他圖片上傳：(可一次上傳多張)</p>
+            <input type="file" name="images_file" multiple required>
+            <p>上傳顏色與庫存資訊：</p>
+            <button type="button" onclick="addColorInput()">Add Color</button>
+            <div class="color-container">
+                <!--                    <div>-->
+                <!--                        <input type="input" name="colors[0].name" placeholder="Color name">-->
+                <!--                        <input type="input" name="colors[0].code" placeholder="Color code">-->
+                <!--                        <div class="stock-area">-->
+                <!--                            <button type="button" onclick="addStockInput()">Add Stock</button>-->
+                <!--                            <div class="stock-container">-->
+                <!--                                <input type="input" name="sizes[0]" placeholder="Size">-->
+                <!--                                <input type="input" name="stocks[0]" placeholder="Stock">-->
+                <!--                            </div>-->
+                <!--                        </div>-->
+                <!--                    </div>-->
+            </div>
+            <br><br><br>
+            <p>最後確認：</p>
+            <input type="submit" value="submit all">
+        </div>
+    </form>
+</div>
+<script src="upload.js"></script>
+</body>
+</html>

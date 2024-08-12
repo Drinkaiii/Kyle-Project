@@ -1,0 +1,33 @@
+
+.main {
+    margin: 60px auto 60px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-account-submit {
+    margin: 20px 0px 20px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.main-account-switch {
+    margin: 20px 0px 20px 0px;
+    display: flex;
+    justify-content: center;
+    color: #0d6efd;
+    cursor: pointer;
+}
+
+
+.main-profile-username {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+
+
